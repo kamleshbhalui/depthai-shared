@@ -70,6 +70,11 @@ struct StereoDepthProperties {
      * Fill color for missing data at frame edges: grayscale 0..255, or -1 to replicate pixels
      */
     std::int32_t rectifyEdgeFillColor = -1;
+
+    dai::CameraBoardSocket leftCameraSocket = dai::CameraBoardSocket::LEFT;
+
+    dai::CameraBoardSocket rightCameraSocket = dai::CameraBoardSocket::RIGHT;
+
     /**
      * Input frame width. Optional (taken from MonoCamera nodes if they exist)
      */
